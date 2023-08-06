@@ -21,7 +21,11 @@ app.get("/users", (req,res) => {
     })
 })
 
+app.get("/test", (req, res)=>{
+    res.status(200).send("this is test routes")
+})
+
 app.listen(8000, () => {
-    console.log("Server up and running on port 8080")
+    console.log("Server up and running on port 8000")
 })
 
